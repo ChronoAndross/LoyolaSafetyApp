@@ -18,148 +18,222 @@
     under the License.
 -->
 <html>
-    <head>
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
-    	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>	
-	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <head>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>	
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 	<script type="text/javascript" src="js/jQuery.radmenu.min.js"></script>
 	<script type="text/javascript" src="js/menuInit.js"></script>
 	<style src="css/pieDefault.css"></style>
 	<link rel="stylesheet" type="text/css" href="css/index.css" />
 	<style> .ui-page{background:black;}</style>
         <title>Loyola Safety App</title>
-    </head>
-    <body>
+  </head>
+  <body>
+
+    <!--Home-->
     <div data-role="page" id="home-page">
-	    <div data-role="header">
-		    <img src="img/loyola.jpg" height=100 width=300 align="middle"></img>
-	    </div>
-	    <div data-role="content">
-		    <br />
-		    <br />
-	    <div id="radial_container" height=500>
-		    <ul class="list" id="radial_container" align="middle">
-			     <li class="item"><div class="my_class">0</div>
-			     <li class="item"><div class="my_class">1</div>
-			     <li class="item"><div class="my_class">2</div>
-			     <li class="item"><div class="my_class">3</div>
-			     <li class="item"><div class="my_class">4</div>
-			     <li class="item"><div class="my_class">5</div>
-			     <li class="item"><div class="my_class">6</div>
-		    </ul>
-	    </div>
-<br />
-<br />
-	    </div>
-	    <div data-role="footer">
-		    <a href="#street-smarts" data-role="button" class="ui-btn-left"  data-icon="delete" data-iconpos="left">Exit</a>
-		    <a data-role="button" class="ui-btn-right" data-icon="information" data-iconpos="left">About</a>
-	    </div>
-	</div>	
+      <div data-role="header">
+	<img src="img/315px-Loyola_University_Maryland_Logo.svg.png" align="middle" style="background-color:#064f06; margin:auto 37.5%; padding:10px; width:25%;"></img>
+      </div>
+      <div data-role="content">
+	<br />
+	<br />
+	  <ul class="ui-grid-duo ui-grid-a" align="middle" style="height:100%;">
+	    <li class="item"><div class="item ui-block-a" style="height:33.3%;"><a data-role="button" data-theme="c" corners="true" href="#street-smarts" style="height:100%;">Streets Smarts</a></div>
+	      <br/>
+	    <li class="item"><div class="item ui-block-b" style="height:33.3%;"><a data-role="button" data-theme="c" corners="true" href="#on-campus-safety" style="height:100%;">On Campus Safety</a></div>
+	      <br/>
+	    <li class="item"><div class="item ui-block-a" style="height:33.3%;"><a data-role="button" data-theme="c" corners="true" href="#alcohol-and-drug" style="height:100%;">Alcohol and Drug Safety</a></div>
+	      <br/>
+	    <li class="item"><div class="item ui-block-b" style="height:33.3%;"><a data-role="button" data-theme="c" corners="true" href="#sexual-misconduct" style="height:100%;">Sexual Misconduct</a></div>
+	      <br/>
+	    <li class="item"><div class="item ui-block-a" style="height:33.3%;"><a data-role="button" data-theme="c" corners="true" href="#bus-routes" style="height:100%;">Bus Routes</a></div>
+	  </ul>
+	<br />
+	<br />
+      </div>
+      <div data-role="footer">
+	<a href="#street-smarts" data-role="button" class="ui-btn-left"  data-icon="delete" data-iconpos="left">Exit</a>
+	<a data-role="button" class="ui-btn-right" data-icon="information" data-iconpos="left">About</a>
+      </div>
+    </div>	
+    <!--End Home-->
 
-	<div data-role="page" id="street-smarts">
-		<div data-role="header">
-			<h1 background="#254117">Street Smarts</h1>
-		</div>
-		<div data-role="content">
-			<br/>
-			<br/>
-			<a data-role="button" data-theme="c" corners="true">General Safety Tips</a>
-			<br></br>
-			<br></br>
-		       	<a data-role="button" data-theme="c" corners="true">Transportation Tips</a>
-		</div>
-		<div data-role="footer">
-			<a href="#home-page" data-role="button" data-icon="back">Back</a>
-		</div>
-	</div>
 
-	<div data-role="page" id="on-campus-safety">
-		<div data-role="header">
-			<h1 background="#254117">On Campus Safety</h1>
-		</div>
-		<div data-role="content">
-			<br/>
-			<br/>
-			<a data-role="button" data-theme="c" corners="true">Active Shooters</a>
-			<br/>
-			<a data-role="button" data-theme="c" corners="true">Silent Witness</a>
-			<br/>
-			<a data-role="button" data-theme="c" corners="true">Bias Reporting</a>
-			<br/>
-			<a data-role="button" data-theme="c" corners="true">Campus Escort</a>
-		</div>
-		<div data-role="footer">
-			<a href="#home-page" data-role="button" data-icon="back">Back</a>
-		</div>
-	</div>
-            
-	<div data-role="page" id="alcohol-and-drug">
-		<div data-role="header">
-			<h1 background="#254117">Alcohol and Drug Prevention</h1>
-		</div>
-		<div data-role="content">
-			<br/>
-			<br/>
-			<a data-role="button" data-theme="c" corners="true">Harm Reduction Strategies</a>
-			<br/>
-			<a data-role="button" data-theme="c" corners="true">BAC Calculator</a>
-			<br/>
-			<a data-role="button" data-theme="c" corners="true">Drink Tabulator</a>
-			<br/>
-			
-		</div>
-		<div data-role="footer">
-			<a href="#home-page" data-role="button" data-icon="back">Back</a>
-		</div>
-	</div>
+    <!--Street Smarts-->
+    <div data-role="page" id="street-smarts">
+      <div data-role="header">
+	<h1 background="#254117">Street Smarts</h1>
+      </div>
+      <div data-role="content">
+	<br/>
+	<br/>
+	<a data-role="button" data-theme="c" corners="true" href="#general-safety-tips">General Safety Tips</a>
+	<br/>
+	<a data-role="button" data-theme="c" corners="true">Transportation Tips</a>
+      </div>
+      <div data-role="footer">
+	<a href="#home-page" data-role="button" data-icon="back">Back</a>
+      </div>
+    </div>
+    <!--End Street Smarts-->
+    
+    <!--General Safety Tips-->
+    <div data-role="page" id="general-safety-tips">
+      <div data-role="header">
+	<h1 background="#254117">General Safety Tips</h1>
+      </div>
+      <div data-role="content">
+	<p>
+	  <ul>
+	    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	    <li>Aenean placerat nunc quis lacus condimentum, a tincidunt dolor congue.
+	    <li>Nunc fringilla dui sed est molestie ultrices.
+	  </ul>
+	  <ul>
+	    <li>Fusce et sapien vel lorem mattis egestas.
+	    <li>Curabitur malesuada mi non risus facilisis, quis tincidunt velit cursus.
+	    <li>Pellentesque hendrerit lorem quis tortor vestibulum, eget pretium est porttitor.
+	  </ul>
+	  <ul>
+	    <li>Suspendisse dapibus turpis a purus pulvinar interdum.
+	  </ul>
+	  <ul>
+	    <li>Nullam quis turpis posuere, volutpat felis quis, vehicula risus.
+	    <li>Nullam eget purus in metus commodo convallis id sit amet libero.
+	  </ul>
+	  <ul>
+	    <li>Etiam tempor augue in feugiat interdum.
+	    <li>Curabitur posuere nibh eu feugiat condimentum.
+	    <li>Donec a est dapibus arcu luctus vehicula.
+	    <li>Sed et nisi vitae lectus fringilla tincidunt.
+	  </ul>
+	</p>
+      </div>
+      <div data-role="footer">
+	<a href="#street-smarts" data-role="button" data-icon="back">Back</a>
+      </div>
+    </div>
+    <!--End General Safety Tips-->
+
+    <!--On Campus Safety-->
+    <div data-role="page" id="on-campus-safety">
+      <div data-role="header">
+	<h1 background="#254117">On Campus Safety</h1>
+      </div>
+      <div data-role="content">
+	<br/>
+	<br/>
+	<a data-role="button" data-theme="c" corners="true">Loyola Alerts</a>
+	<br/>
+	<a data-role="button" data-theme="c" corners="true">Silent Witness</a>
+	<br/>
+	<a data-role="button" data-theme="c" corners="true">Bias Reporting</a>
+	<br/>
+	<a data-role="button" data-theme="c" corners="true">Campus Escort</a>
+      </div>
+      <div data-role="footer">
+	<a href="#home-page" data-role="button" data-icon="back">Back</a>
+      </div>
+    </div>
+    <!--End On Campus Safety-->
+    
+    <!--Alcohol and Drug-->
+    <div data-role="page" id="alcohol-and-drug">
+      <div data-role="header">
+	<h1 background="#254117">Alcohol and Drug Safety</h1>
+      </div>
+      <div data-role="content">
+	<br/>
+	<br/>
+	<a data-role="button" data-theme="c" corners="true">Harm Reduction Strategies</a>
+	<br/>
+	<a data-role="button" data-theme="c" corners="true" href="#bac-calculator">BAC Calculator</a>
+	<br/>
+	<a data-role="button" data-theme="c" corners="true">Drink Tabulator</a>
+	<br/>
 	
-	<div data-role="page" id="sexual-misconduct">
-		<div data-role="header">
-			<h1 background="#254117">Sexual Misconduct</h1>
-		</div>
-		<div data-role="content">
-			<br/>
-			<br/>
-			<a data-role="button" data-theme="c" corners="true">Prevention Strategies</a>
-			<br/>
-			<a data-role="button" data-theme="c" corners="true">Recovery Strategies</a>
-			<br/>
-		<div data-role="footer">
-			<a href="#home-page" data-role="button" data-icon="back">Back</a>
-		</div>
-	</div>
-	
-	<div data-role="page" id="bus-routes">
-		<div data-role="header">
-			<h1 background="#254117">Bus Routes</h1>
-		</div>
-		<div data-role="content">
-			<br/>
-			<br/>
-			<a data-role="button" data-theme="c" corners="true">College Town Shuttle</a>
-			<br/>
-			<a data-role="button" data-theme="c" corners="true">Charm City Circulator</a>
-			<br/>
-			<a data-role="button" data-theme="c" corners="true">Loyola Shuttle Routes</a>
-			<br/>	
-		</div>
-		<div data-role="footer">
-			<a href="#home-page" data-role="button" data-icon="back">Back</a>
-		</div>
-	</div>
+      </div>
+      <div data-role="footer">
+	<a href="#home-page" data-role="button" data-icon="back">Back</a>
+      </div>
+    </div>
+    <!--End Alcohol and Drug-->
 
+    <!--BAC Calculator-->
+    <div data-role="page" id="bac-calculator">
+      <div data-role="header">
+	<h1 background="#254117">BAC Calculator</h1>
+      </div>
+      <div data-role="content">
+	<p>
+	  <form id="calculator" action="calculateBAC()">
+	    Gender: <label for="malerad">Male</label> <input type="radio" name="sex" value="male"id="malerad"/> &nbsp;&nbsp;&nbsp;&nbsp;
+	        <label for="femalerad">Female</label> <input type="radio" name="sex" value="female" id="femalerad"><br/>
+	    Weight: <label for="weightbox" class="ui-hidden-accessible">Weight in lbs</label> <input type="number" name="weight" min="1" id="weightbox"/><br/>
+	    Drinks: <label for="drinkbox" class="ui-hidden-accessible">Number of Drinks</label> <input type="number" name="drinks" min="1" id="drinkbox"/><br/>
+	    Hours Since Last Drink: <label for="hourbox" class="ui-hidden-accessible">Hours Since Last Drink</label> <input type="number" name="hours" min="0" step="0.5" id="hourbox"/><br/>
+	    <input type="submit" value="Submit"/>
+	  </form>
+	</p>
+      </div>
+      <div data-role="footer">
+	<a href="#alcohol-and-drug" data-role="button" data-icon="back">Back</a>
+      </div>
+    </div>
+    <!--End General Safety Tips-->
 
-	<div id="deviceready" class="blink">
+    <!--Sexual Misconduct-->
+    <div data-role="page" id="sexual-misconduct">
+      <div data-role="header">
+	<h1 background="#254117">Sexual Misconduct</h1>
+      </div>
+      <div data-role="content">
+	<br/>
+	<br/>
+	<a data-role="button" data-theme="c" corners="true">Prevention Strategies</a>
+	<br/>
+	<a data-role="button" data-theme="c" corners="true">Recovery Strategies</a>
+	<br/>
+	<div data-role="footer">
+	  <a href="#home-page" data-role="button" data-icon="back">Back</a>
+	</div>
+      </div>
+    </div>  
+    <!--End Sexual Misconduct-->
+
+    <!--Bus Routes-->
+    <div data-role="page" id="bus-routes">
+      <div data-role="header">
+	<h1 background="#254117">Bus Routes</h1>
+      </div>
+      <div data-role="content">
+	<br/>
+	<br/>
+	<a data-role="button" data-theme="c" corners="true" href="http://www.baltimorecollegetown.org/shuttle/">College Town Shuttle</a>
+	<br/>
+	<a data-role="button" data-theme="c" corners="true" href="http://www.charmcitycirculator.com/content/next-bus">Charm City Circulator</a>
+	<br/>
+	<a data-role="button" data-theme="c" corners="true" href="http://www.nextbus.com/googleMap/?a=loyola&r=compass6&d=loop&s=physical_ty">Loyola Shuttle Routes</a>
+	<br/>	
+      </div>
+      <div data-role="footer">
+	<a href="#home-page" data-role="button" data-icon="back">Back</a>
+      </div>
+    </div>
+    <!--Bus Routes-->
+      
+      <div id="deviceready" class="blink">
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
-            app.initialize();
+          app.initialize();
         </script>
-	</div>
-    </body>
+      </div>
+  </body>
 </html>
